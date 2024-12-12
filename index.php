@@ -6,12 +6,19 @@
     <title>Afrique Geo</title>
     <link rel="stylesheet" href="./src/input.css">
     <link rel="stylesheet" href="./src/output.css">
-
 </head>
 <body class="bg-gray-100 font-sans"> 
     <!-- Header -->
-    <header class="bg-amber-700 text-white p-4 shadow-md">
-        <h1 class="text-center text-2xl font-bold">AFRICA GEO</h1>
+    <header class="bg-amber-700 text-white p-4 shadow-md flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <img src="./Img\Africa-Map-PNG-Photo.png" alt="Logo Africa Geo" class="h-10">
+            <h1 class="text-2xl font-bold">AFRICA GEO</h1>
+        </div>
+        <nav class="flex space-x-6">
+            <a href="#" class="text-white hover:text-yellow-200">Recherche</a>
+            <a href="#" class="text-white hover:text-yellow-200">Contact</a>
+            <a href="#" class="text-white hover:text-yellow-200">Connexion</a>
+        </nav>
     </header>
 
     <!-- Main Content -->
