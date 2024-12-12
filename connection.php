@@ -1,7 +1,14 @@
 <?php
-$conn = new mysqli("localhost", "root", "","africa gj");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-  echo "Connected successfully";
+$host = 'localhost';
+$dbname = 'Africa GJ';
+$username = 'root';
+$password = '';
+
+// Créer la connexion MySQLi
+$connectdata = mysqli_connect($host, $username, $password, $dbname);
+if ($connectdata->connect_error) {
+    die("Échec de la connexion : " . $mysqli->connect_error);
+} else {
+    echo "Connexion réussie à la base de données";
+}
   ?>

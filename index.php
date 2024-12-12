@@ -1,3 +1,15 @@
+<?php 
+require './connection.php';
+$data = 'SELECT * FROM pays';
+$resultat = mysqli_query($connectdata,$data);
+var_dump($);
+// if ($resultat) {
+//     echo 'mzyan';
+// }
+// else {
+//     echo'ggdl';
+// }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,7 +23,7 @@
     <!-- Header -->
     <header class="bg-amber-700 text-white p-4 shadow-md flex items-center justify-between">
         <div class="flex items-center space-x-4">
-            <img src="./Img\Africa-Map-PNG-Photo.png" alt="Logo Africa Geo" class="h-10">
+            <img src="Img\Africa-Map-PNG-Photo.png" alt="Logo Africa Geo" class="h-10">
             <h1 class="text-2xl font-bold">AFRICA GEO</h1>
         </div>
         <nav class="flex space-x-6">
@@ -26,10 +38,10 @@
         <!-- Section: Ajouter un pays -->
         <section class="bg-white p-6 rounded-lg shadow-md mb-6">
             <h2 class="text-xl font-semibold text-green-700 mb-4">Ajouter un Pays</h2>
-            <form id="add-country-form" class="space-y-4">
+            <form method="post" id="add-country-form" class="space-y-4">
                 <div>
                     <label for="country-name" class="block font-medium">Nom du Pays</label>
-                    <input type="text" id="country-name" class="w-full border-gray-300 rounded-lg shadow-sm" placeholder="Ex : Maroc" required>
+                    <input type="text"  id="country-name" class="w-full border-gray-300 rounded-lg shadow-sm" placeholder="Ex : Maroc" required>
                 </div>
                 <div>
                     <label for="population" class="block font-medium">Population</label>
