@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afrique Geo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans"> 
     <!-- Header -->
-    <header class="bg-green-700 text-white p-4 shadow-md">
+    <header class="bg-amber-700 text-white p-4 shadow-md">
         <h1 class="text-center text-2xl font-bold">AFRICA GEO</h1>
     </header>
 
@@ -43,7 +45,7 @@
                     </div>
                     <button type="button" id="add-city" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-400">Ajouter une Ville</button>
                 </div>
-                <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Ajouter</button>
+                <button type="submit" class="bg-amber-700 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600">Ajouter</button>
             </form>
         </section>
 
@@ -67,8 +69,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-green-700 text-white text-center py-4">
-        <p>&copy; 2024 Jeu Éducatif - Afrique. Tous droits réservés.</p>
+    <footer class="bg-amber-700 text-white text-center py-4">
+        <p>&copy; 2024  - Africa Géo-Junior. Tous droits réservés.</p>
     </footer>
 
     <script>
