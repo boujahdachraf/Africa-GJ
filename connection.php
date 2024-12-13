@@ -8,7 +8,5 @@ $password = '';
 $connectdata = mysqli_connect($host, $username, $password, $dbname);
 if ($connectdata->connect_error) {
     die("Échec de la connexion : " . $mysqli->connect_error);
-} else {
-    echo "Connexion réussie à la base de données";
-}
+} 
   ?>
