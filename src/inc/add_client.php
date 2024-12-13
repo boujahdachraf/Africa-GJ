@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD']== "POST"){
     $select = $_POST['select'];
     $insert = "INSERT INTO `pays` (`nom`, `population`, `langues`, `id_continent`) VALUES ( '$country', '$population', '$langue', '1')";
     $result = $connectdata->query($insert);
+    
     if($result){
        header("Location: ..\..\index.php"); 
     }else{
